@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Netflix Form</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* BACKGROUND NETFLIX */
+body{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.95)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/9e9f7e8c-0f70-4f7d-9e33-6e41e7c4f0c5/3a32b1c3-6d06-4f3e-b25c-4b78a7b9d7c2/ID-en-20240108-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:25px 60px;
+}
+
+header img{
+    width:120px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#e50914;
+}
+
+/* CENTER AREA */
+section{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* POPUP ANIMATION */
+@keyframes popup {
+    0%{
+        opacity:0;
+        transform:scale(0.7) translateY(80px);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1) translateY(0);
+    }
+}
+
+/* FORM BOX */
+.form-box{
+    width:380px;
+    padding:45px;
+    background:rgba(0,0,0,0.85);
+    border-radius:6px;
+    box-shadow:0 0 40px black;
+    animation: popup 1s ease;
+}
+
+.form-box h2{
+    margin-bottom:25px;
+    color:white;
+}
+
+/* INPUT */
+input, select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:4px;
+    background:#333;
+    color:white;
+}
+
+input:focus, select:focus{
+    outline:none;
+    border:2px solid #e50914;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:13px;
+    border:none;
+    background:#e50914;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    border-radius:4px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#b20710;
+    transform:scale(1.03);
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    color:#aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo unila.png" class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <div class="form-box">
+        <h2>Form Input Mahasiswa</h2>
+
+        <form>
+            <input type="text" placeholder="Nama">
+            <input type="number" placeholder="NPM">
+
+            <select>
+                <option>Pilih Kelas</option>
+                <option>A</option>
+                <option>B</option>
+            </select>
+
+            <input type="date">
+            <input type="time">
+
+            <button>Submit</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 Netflix Style Form
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Profil Dinar</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ff758c,#ff7eb3,#65c7f7,#9cecfb);
+    background-size:400% 400%;
+    animation: gradientBG 12s ease infinite;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@keyframes gradientBG{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.card{
+    width:900px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(18px);
+    border-radius:25px;
+    padding:40px;
+    color:#fff;
+    box-shadow:0 25px 70px rgba(0,0,0,0.35);
+    animation: fade 1s ease;
+}
+
+@keyframes fade{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+.header{
+    text-align:center;
+    margin-bottom:30px;
+}
+.header h1{
+    font-size:40px;
+    font-weight:700;
+    background: linear-gradient(90deg,#fff,#ffe082);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.header h2{
+    font-weight:300;
+    opacity:0.9;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.section{
+    background: rgba(255,255,255,0.12);
+    padding:22px;
+    border-radius:20px;
+    transition:.35s;
+    border:1px solid rgba(255,255,255,0.2);
+}
+.fa-facebook{ color:#1877f2; }
+.fa-instagram{ color:#e4405f; }
+.fa-twitter{ color:#1da1f2; }
+.fa-whatsapp{ color:#25d366; }
+.fa-envelope{ color:#ea4335; }
+.fa-phone{ color:#34b7f1; }
+
+.section:hover{
+    transform:translateY(-8px) scale(1.02);
+    background: rgba(255,255,255,0.25);
+}
+
+.section h3{
+    margin-bottom:12px;
+    border-left:5px solid #7df9ff;
+    padding-left:12px;
+    font-weight:600;
+}
+
+.desc{
+    line-height:1.7;
+    font-size:15px;
+    text-align:justify;
+}
+
+ul,ol{
+    padding-left:20px;
+}
+li{
+    margin:10px 0;
+}
+
+a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:.25s;
+}
+a:hover{
+    color:#7df9ff;
+    letter-spacing:.5px;
+}
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    font-size:14px;
+    opacity:.85;
+}
+
+@media(max-width:850px){
+    .card{width:95%;}
+    .grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+<div class="header">
+<h1>Dinar Aisa Artika</h1>
+<h2>NPM: 2417051020</h2>
+</div>
+
+<div class="grid">
+
+<div class="section">
+<h3>Tentang Saya</h3>
+<p class="desc">
+Saya termasuk orang yang mandiri dan lebih suka mengandalkan diri sendiri dalam menyelesaikan sesuatu. 
+Sejak dulu saya terbiasa mencoba mencari solusi tanpa harus selalu bergantung pada orang lain. 
+Bagi saya, proses belajar dan berusaha sendiri itu penting karena dari situ saya bisa berkembang.
+<br><br>
+Saya juga punya keinginan yang kuat untuk terus meningkatkan kemampuan. Saya tertarik pada banyak hal dan ingin mencoba berbagai bidang, walaupun kadang membuat saya sulit fokus hanya pada satu hal saja. Tapi saya melihatnya sebagai bagian dari proses menemukan potensi terbaik dalam diri saya.
+<br><br>
+Saya sangat bersyukur karena memiliki keluarga yang selalu mendukung, terutama dalam hal pendidikan. Dukungan mereka membuat saya lebih percaya diri dan semangat untuk terus maju. Selain itu, saya juga punya teman-teman yang selalu memberi semangat dan motivasi. Kehadiran mereka membuat saya merasa tidak sendiri dalam perjalanan meraih impian.
+</p>
+</div>
+
+<div class="section">
+<h3>Data Diri</h3>
+<ul>
+<li><i class="fas fa-envelope"></i> <a href="mailto:aisaartikadinar@gmail.com">aisaartikadinar@gmail.com</a></li>
+<li><i class="fas fa-phone"></i> <a href="tel:081289481958">081289481958</a></li>
+<li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6281289481958">Chat WhatsApp</a></li>
+</ul>
+</div>
+
+<div class="section">
+<h3>Hobi</h3>
+<ol>
+<li>Travelling</li>
+<li>Berenang</li>
+<li>Makan</li>
+</ol>
+</div>
+
+<div class="section">
+<h3>Sosial Media</h3>
+<ul>
+<li><i class="fab fa-facebook"></i> <a href=https://www.facebook.com/dinaraisaartika>dinar aisa artika</a></li>
+<li><i class="fab fa-instagram"></i> <a href="https://instagram.com/dinarrartika">dinarartika</a></li>
+<li><i class="fab fa-twitter"></i> <a href="https://twitter.com/dynareee">dynareee</a></li>
+</ul>
+</div>
+
+</div>
+
+<div class="footer">
+Website Profil • Dibuat oleh dinar imut 
+</div>
+
+</div>
+
+</body>
+</html>
